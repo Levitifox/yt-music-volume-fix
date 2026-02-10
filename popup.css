@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+
+body {
+    font-family: "Sen", sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 250px;
+    background-color: #141419;
+    color: #f1f4fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 12px;
+    color: #ccccccd3;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #474755;
+    background-color: #1f2027;
+    color: #fff;
+    font-family: "Sen", sans-serif;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #00ff62;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    width: 50px;
+    height: 26px;
+    position: relative;
+    margin: 0;
+    border: 2px solid #474755;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #2d2f39 0%, #1f2027 100%);
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+
+input[type="checkbox"]:checked {
+    border-color: #00ff62;
+}
+
+input[type="checkbox"]:checked::after {
+    transform: translateX(24px);
+}

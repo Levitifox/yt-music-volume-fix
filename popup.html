@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>YTM Slider Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Volume Control</h2>
+
+        <div class="setting-row">
+            <label for="toggle">Enable Fix</label>
+            <div class="toggle-wrapper">
+                <input type="checkbox" id="toggle" />
+            </div>
+        </div>
+
+        <div class="setting-row" id="granularity-container">
+            <label for="maxVal">Maximum Volume</label>
+            <input type="number" id="maxVal" min="10" max="1000" />
+        </div>
+
+        <p class="description">
+            For more precise control, set the desired maximum volume value.
+        </p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
